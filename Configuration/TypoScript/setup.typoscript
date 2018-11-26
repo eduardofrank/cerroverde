@@ -8,8 +8,12 @@
 #### PAGE ####
 ##############
 page {
+    includeCSSLibs {
+        googlewebfont = https://fonts.googleapis.com/css?family=Montserrat:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i
+    }
     includeCSS {
         theme = EXT:cerroverde/Resources/Public/Scss/Theme/theme.scss
+        cv_theme = EXT:cerroverde/Resources/Public/Css/cv.css
     }
 
     includeJSLibs {
@@ -26,5 +30,24 @@ page {
 
     includeJSFooter {
         cerroverde_scripts = EXT:cerroverde/Resources/Public/JavaScript/Dist/scripts.js
+    }
+}
+
+################################
+#### ADDED BY EDUARDO FRANK ####
+################################
+
+config.contentObjectExceptionHandler = 0
+
+#### FORMS SETUP ####
+plugin.tx_form.settings.yamlConfigurations.100 = EXT:cerroverde/Configuration/Form/FormSetup.yaml
+module.tx_form.settings.yamlConfigurations.100 = EXT:cerroverde/Configuration/Form/FormSetup.yaml
+
+plugin.tx_bootstrap_package {
+    _LOCAL_LANG {
+        default {
+            cookieconsent.common.message = Este sitio utiliza cookies para proporcionar una mejor experiencia en nuestra página
+            cookieconsent.common.dismiss = OK!
+        }
     }
 }

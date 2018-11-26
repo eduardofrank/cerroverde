@@ -12,7 +12,7 @@ page {
         file = EXT:cerroverde/Resources/Public/Images/logo.svg
         fileInverted = EXT:cerroverde/Resources/Public/Images/logo-inverted.svg
         height = 52
-        width = 192
+        width = 250
         alt = cerroverde
         linktitle = cerroverde
     }
@@ -58,3 +58,21 @@ plugin.bootstrap_package.settings.scss {
     primary = #eb3e4a
     secondary = #013859
 }
+
+################################
+#### ADDED BY EDUARDO FRANK ####
+################################
+
+plugin.tx_news {
+        view.twb {
+                templateRootPath = EXT:cerroverde/Resources/Private/Templates/Styles/Twb/Templates
+                partialRootPath = EXT:cerroverde/Resources/Private/Templates/Styles/Twb/Partials/
+                layoutRootPath = EXT:cerroverde/Resources/Private/Templates/Styles/Twb/Layouts/
+        }
+}
+
+page.preloader.enable = 0
+plugin.bootstrap_package.settings.scss.primary = #2A2A72
+plugin.bootstrap_package.settings.scss.secondary = #FFA400
+page.theme.copyright.enable = 0
+page.theme.language.enable = 0
